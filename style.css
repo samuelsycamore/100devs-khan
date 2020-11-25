@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Source+Serif+Pro:wght@600&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Noto Sans', sans-serif;
+  color: #161f2a;
+  background: #fff;
+}
+
+body{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: #006aec;
+}
+
+.mobile-nav-wrapper{
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.hamburger{
+  cursor: pointer;
+}
+
+
+.line{
+  background: #006aec;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 4px;
+}
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav-links{
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding: 2rem;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 8rem 6rem;
+}
+
+.hero-banner img{
+  max-width: 100%;
+  min-width: 400px;
+}
+
+.hero-text img{
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.hero-banner, .hero-text{
+  flex: 1;
+}
+
+h2{
+  font-family: 'Source Serif Pro', serif;
+  font-size: 5.5rem;
+}
+
+
+button{
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #006aec;
+  color: #f1f1f1;
+  font-family: 'Noto Sans',sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 1rem 3rem;
+  margin: 30px 0.5rem;
+  border-radius: 0.5rem;
+}
+
+button:hover,
+button:focus{
+    background: #161f2a;
+    color: #f1f1f1;
+}
+
+button:focus{
+    outline: 1px solid #f1f1f1;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
+
+
+
+
+@media (max-width: 780px){
+  .mobile-nav-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    width: 10rem;
+  }
+  .nav-links{
+    display: none;
+  }
+  nav{
+    justify-content: flex-start;
+  }
+}
